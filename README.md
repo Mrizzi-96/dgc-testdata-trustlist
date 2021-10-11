@@ -10,7 +10,7 @@ This is a C# Console App which converts files from the [dgc-testdata official re
 
 First, clone this repository 
 ```
-git clone https://github.com/dgc-testdata-trustlist.git
+git clone https://github.com/Mrizzi-96/dgc-testdata-trustlist.git
 ```
 Then, initialize submodules in the assets folder in order to use the official testdata repository
 ```
