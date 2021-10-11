@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "hAMnpQfV2r3m1+Qh0m8zFAgMnbSTI9DSQpBMGT23zeidAVZ7nYz2bTit+fkSiTISSbirEN4Ju1U32+k7qslxWw==",
+  "success": true,
+  "projectFilePath": "C:\\SOURCE\\TESTS\\dgc-testdata-trustlist\\src\\dgc-testdata-trustlist\\dgc-testdata-trustlist\\dgc-testdata-trustlist.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marco.rizzi\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\marco.rizzi\\.nuget\\packages\\microsoft.identitymodel.logging\\6.13.1\\microsoft.identitymodel.logging.6.13.1.nupkg.sha512",
+    "C:\\Users\\marco.rizzi\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.13.1\\microsoft.identitymodel.tokens.6.13.1.nupkg.sha512",
+    "C:\\Users\\marco.rizzi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\marco.rizzi\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
