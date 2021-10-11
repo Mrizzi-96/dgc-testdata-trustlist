@@ -14,7 +14,7 @@ git clone https://github.com/Mrizzi-96/dgc-testdata-trustlist.git
 ```
 Then, initialize submodules in the assets folder in order to use the official testdata repository
 ```
-git submodule init https://github.com/eu-digital-green-certificates/dgc-testdata.git 
+git submodule init 
 ```
 Lastly, Start the console app. You will find your formatted trustlist in a file called ```cached_trust_list.json```.
 ## Important info for validation
