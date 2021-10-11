@@ -18,6 +18,6 @@ git submodule init https://github.com/eu-digital-green-certificates/dgc-testdata
 ```
 Lastly, Start the console app. You will find your formatted trustlist in a file called ```cached_trust_list.json```.
 ## Important info for validation
-**Remember that validation using dgc-testdata's certificates needs to be done at the moment which is written in the ```TESTCTX.VALIDATIONCLOCK```  JSON property.**
+**Remember that validation using dgc-testdata's certificates needs to be done at the moment which is written in the ```TESTCTX.VALIDATIONCLOCK```  JSON property. See their [README file](https://github.com/eu-digital-green-certificates/dgc-testdata#readme) for clarification.**
 ## Who can use this project?
 Everyone can use this project or contribute to it in any way.
