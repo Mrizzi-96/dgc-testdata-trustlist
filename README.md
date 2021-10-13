@@ -15,6 +15,7 @@ git clone https://github.com/Mrizzi-96/dgc-testdata-trustlist.git
 Then, initialize submodules in the assets folder in order to use the official testdata repository
 ```
 git submodule init 
+git submodule update
 ```
 Lastly, Start the console app. You will find your formatted trustlist in a file called ```cached_trust_list.json```.
 ## Important info for validation
