@@ -40,7 +40,7 @@ namespace dgc_testdata_trustlist
             {
 
                 // skip excluded folders
-                if (file.Contains(@"\test\") || file.Contains(@"\common\"))
+                if (file.Contains(@"\test\")||file.Contains(@"\LV\") || file.Contains(@"\common\B1.json"))
                 {
                     continue;
                 }
@@ -77,7 +77,8 @@ namespace dgc_testdata_trustlist
 
                     if (string.IsNullOrEmpty(cc))
                     {
-                        throw new Exception($"Cannot get country from certificate");
+                        //throw new Exception($"Cannot get country from certificate");
+                        continue;
                     }
 
                     // check if cc already exists
@@ -95,11 +96,14 @@ namespace dgc_testdata_trustlist
                         var keys = new List<Key>();
                         if (countryDscList.Keys != null)
                         {
+                            
                             keys.AddRange(countryDscList.Keys);
                         }
 
                         // append the new key
-                        keys.Add(jwk);
+                        if (!keys.Select(j => j.Kid).Contains(jwk.Kid))
+                            keys.Add(jwk);
+                        
                         countryDscList.Keys = keys.ToArray();
                     }
                     else

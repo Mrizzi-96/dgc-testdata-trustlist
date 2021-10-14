@@ -30,7 +30,7 @@ namespace dgc_testdata_trustlist.Helpers
                 }
             }
 
-            return string.Empty;
+            return "AT";
 
         }
     }
