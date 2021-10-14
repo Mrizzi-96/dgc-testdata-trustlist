@@ -1,4 +1,5 @@
-﻿using dgc_testdata_trustlist.Models;
+﻿using dgc_testdata_trustlist.Helpers;
+using dgc_testdata_trustlist.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -61,19 +62,23 @@ namespace dgc_testdata_trustlist
                 {
                     var cert = m.Groups[1].Value;
                     var jwk = new Key();
+                    var cc = string.Empty;
                     try
                     {
                         // create Key from certificate
                         var byteData = Encoding.ASCII.GetBytes(cert);
                         jwk = Key.LoadFromX509(byteData);
+                        cc = CertificateHelper.GetCountryFromCertificateRawData(byteData);
                     }
                     catch (Exception e)
                     {
                         throw new Exception($"Error: unable to load certificate from file {file}", e);
                     }
 
-                    // extract country code from filename
-                    var cc = file.Split("\\")[8];
+                    if (string.IsNullOrEmpty(cc))
+                    {
+                        throw new Exception($"Cannot get country from certificate");
+                    }
 
                     // check if cc already exists
                     if (!trustList.DscTrustList.ContainsKey(cc))
