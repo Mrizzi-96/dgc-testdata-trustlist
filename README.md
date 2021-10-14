@@ -5,19 +5,20 @@ This is a C# Console App which converts files from the [dgc-testdata official re
 ## Summary
 - [How to use](#how-to-use)
 - [Important info for validation](#important-info-for-validation)
-- [Who can use this project?](#who-can-use-this-project-?)
+- [License](#license)
 ## How to use
 
 First, clone this repository 
 ```
-git clone https://github.com/dgc-testdata-trustlist.git
+git clone https://github.com/Mrizzi-96/dgc-testdata-trustlist.git
 ```
 Then, initialize submodules in the assets folder in order to use the official testdata repository
 ```
-git submodule init https://github.com/eu-digital-green-certificates/dgc-testdata.git 
+git submodule init 
+git submodule update
 ```
 Lastly, Start the console app. You will find your formatted trustlist in a file called ```cached_trust_list.json```.
 ## Important info for validation
-**Remember that validation using dgc-testdata's certificates needs to be done at the moment which is written in the ```TESTCTX.VALIDATIONCLOCK```  JSON property.**
-## Who can use this project?
-Everyone can use this project or contribute to it in any way.
+**Remember that validation using dgc-testdata's certificates needs to be done at the moment which is written in the ```TESTCTX.VALIDATIONCLOCK```  JSON property. See their [README file](https://github.com/eu-digital-green-certificates/dgc-testdata#readme) for clarification.**
+## License
+See [LICENSE.txt](/LICENSE.txt).
